@@ -1,10 +1,8 @@
-// import React from 'react';
+import React from 'react';
 import { useState, Input } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import HomePage from './components/HomePage';
-import BirthdayContent from './components/BirthdayContent';
-// import Login from './components/Login';
-// import logo from './logo.svg';
+import BirthdayContent from './components/Main';
 import './App.css';
 
 function App() {
@@ -27,13 +25,6 @@ function App() {
             )}
         </FormControl>
         </Flex>
-    // <Router>
-    //   <Routes>
-    //     <Route exact path='/' element={<HomePage />}/>
-    //     <Route exact path='/Login' element={<Login />}/>
-    //     <Route exact path='/BirthdayContent' element={<BirthdayContent />}/>
-    //   </Routes>
-    // </Router>
   );
 }
 
