@@ -40,7 +40,7 @@ function Login() {
           size="lg" 
           mb={4} 
           fontSize="20px" 
-          color="#900C3F"
+          color="white"
         >
           Login to explore to find what your <br /> city girl has in stock for you
         </Heading>
@@ -50,20 +50,34 @@ function Login() {
           value={email}
           onChange={(e) => setEmail(e.target.value)}
           mb={2}
+          width="300px"
+          height="40px"
+          fontSize="30px"
+          outline="0"
+          boxShadow="none"
         />
         <Input
           type="password"
           placeholder="Password"
           value={password}
           onChange={(e) => setPassword(e.target.value)}
-          width="250px"
-          height="50px"
+          width="300px"
+          height="40px"
+          fontSize="30px"
+          margin="5px"
+          outline="0"
+          boxShadow="none"
         />
         <Button 
           onClick={handleLogin} 
-          background="#900C3F" 
-          width="250px" 
-          height="50px"
+          background="#5c4c47" 
+          width="300px" 
+          height="45px"
+          color="white"
+          borderRadius="3px"
+          fontSize="30px"
+          _hover="{color: #4a2315}"
+          boxShadow="none"
         >
           Login
         </Button>

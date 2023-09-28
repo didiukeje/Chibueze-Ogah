@@ -1,31 +1,21 @@
 import React from 'react';
-import { useState, Input } from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import HomePage from './components/HomePage';
-import BirthdayContent from './components/Main';
-import './App.css';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Login from './components/Login';
+import Main from './components/Main';
+import Confetti from './components/Confetti';
 
 function App() {
-    const [input, setInput] = useState('')
-  
-    const handleInputChange = (e) => setInput(e.target.value)
-  
-    const isError = input === ''
     return (
-        <Flex>
-        <FormControl isInvalid={isError}>
-            <FormLabel>Email</FormLabel>
-            <Input type="email" value={input} onChange={handleInputChange}/>
-            {!isError ? (
-                    <FormHelperText>
-                    Enter the special email you were given by Didi.
-                    </FormHelperText>
-                ) : (
-                <FormErrorMessage>Your speacial email is required.</FormErrorMessage>
-            )}
-        </FormControl>
-        </Flex>
-  );
-}
-
-export default App;
+        <Router>
+          <Routes>
+            <Route path="/login" element={<Login />} />
+            <Route path="/main" element={<Main />} />
+            <Route path="/confetti" element={<Confetti />} />
+        </Routes>
+        </Router>
+    );
+  }
+  
+  export default App;
+  
+  
