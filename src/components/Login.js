@@ -28,21 +28,24 @@ function Login() {
       display="flex"
       alignItems="center"
       justifyContent="center"
-      // filter="blur(1px)"  Apply a blur effect to the background image
-     >
+      backgroundSize="cover"
+      backgroundPosition="center"
+    >
       <Center
          p={4}
          backgroundColor="whiteAlpha.800"
          borderRadius="md"
          flexDirection="column"
+         width={['90%', '70%', '50%']} // Adjust width for mobile responsiveness
        >
         <Heading 
           size="lg" 
           mb={4} 
-          fontSize="20px" 
+          fontSize={['20px', '24px', '28px']} 
           color="white"
+          textAlign="center" // Center text on mobile
         >
-          Login to explore to find what your <br /> city girl has in stock for you
+          Login to explore to find what your city girl has in stock for you
         </Heading>
         <Input
           type="email"
@@ -50,34 +53,30 @@ function Login() {
           value={email}
           onChange={(e) => setEmail(e.target.value)}
           mb={2}
-          width="300px"
+          width={["100%", "100%", "300px"]}
           height="40px"
-          fontSize="30px"
-          outline="0"
-          boxShadow="none"
+          fontSize={['16px', '20px']}
         />
         <Input
           type="password"
           placeholder="Password"
           value={password}
           onChange={(e) => setPassword(e.target.value)}
-          width="300px"
+          width={["100%", "100%", "300px"]}
           height="40px"
-          fontSize="30px"
+          fontSize={['16px', '20px']} 
           margin="5px"
-          outline="0"
-          boxShadow="none"
         />
         <Button 
           onClick={handleLogin} 
           background="#5c4c47" 
-          width="300px" 
+          width={["100%", "100%", "300px"]}
           height="45px"
           color="white"
           borderRadius="3px"
-          fontSize="30px"
-          _hover="{color: #4a2315}"
-          boxShadow="none"
+          fontSize={['18px', '22px']} 
+          _hover={{ background: '#4a2315', color: 'white' }}
+          mt={2} 
         >
           Login
         </Button>
