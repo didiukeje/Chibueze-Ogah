@@ -1,13 +1,47 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
+import { Box, Center } from '@chakra-ui/react';
+import { motion, useAnimation } from 'framer-motion';
 
 function Main() {
+  const [showMessage, setShowMessage] = useState(false);
+  const controls = useAnimation();
+
+  useEffect(() => {
+    controls.start({ opacity: 1, y: 0 });
+  }, [controls]);
+
+  const showMessageHandler = () => {
+    setShowMessage(true);
+  };
+
   return (
-    <div>
-      <h2>Main Page</h2>
-      Chibueze Ogah Anyigor, you are welcome to this website specially built for you by your 
-      one and only CITY GIRL. Sit back and read with smiles because I'm sure you're definitely
-      smiling with a big grin on your face.
-    </div>
+    <Box
+      minHeight="100vh"
+      display="flex"
+      alignItems="center"
+      justifyContent="center"
+      background="#2a1108"
+    >
+      <Center>
+        <motion.div
+          initial={{ opacity: 0, y: -50 }}
+          animate={controls}
+          transition={{ duration: 1, delay: 0.5 }}
+          style={{ display: showMessage ? 'block' : 'none' }}
+        >
+          <Box
+            backgroundColor="#8f756b"
+            color="white"
+            padding="20px"
+            borderRadius="md"
+            textAlign="center"
+          >
+            <h1 style={{ fontSize: '24px' }}>Happy Birthday my City Boy</h1>
+          </Box>
+        </motion.div>
+        <button onClick={showMessageHandler}>Show Message</button>
+      </Center>
+    </Box>
   );
 }
 

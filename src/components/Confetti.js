@@ -151,6 +151,9 @@ function App() {
         </Heading>
         <Text fontSize={['md', 'lg']} mb="8"> {/* Adjust font size for mobile */}
           You make every moment special. Here's to a day as wonderful as you are.
+          Chibueze Ogah Anyigor, you are welcome to this website specially built for you by your 
+          one and only CITY GIRL. Sit back and read with smiles because I'm sure you're definitely
+          smiling with a big grin on your face.
         </Text>
         <Image
           src="/fave-modified.png"

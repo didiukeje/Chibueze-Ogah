@@ -1,0 +1,49 @@
+.confetti-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #ff718d;
+    overflow: hidden;
+  }
+  
+  button {
+    margin: 10px;
+    background-color: #29cdff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  .message-animation {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    animation: bounce 2s infinite alternate;
+  }
+  
+  .message {
+    margin-bottom: 10px;
+  }
+  
+  .city-boy {
+    color: #a864fd; /* Updated color */
+  }
+  
+  @keyframes bounce {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(-10px);
+    }
+  }
+  
