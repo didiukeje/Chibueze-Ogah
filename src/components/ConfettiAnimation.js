@@ -37,6 +37,7 @@ function ConfettiAnimation() {
       <div className="message-animation" colors={[ '#a864fd', '#F7B4BE', '#29cdff', '#fdff6a', '#78ff44' ]}>
         <div className="message">Happy Birthday</div>
         <div className="message">my City Boy</div>
+        <div className="message">Make a Wish</div>
       </div>
     </div>
   );

@@ -66,7 +66,7 @@ function BirthdayPage() {
         textAlign="center" // Center text on mobile
       >
         <Heading fontSize={['2xl', '3xl']} mb="4"> {/* Adjust font size for mobile */}
-          Your kind heart and sweet persona is exceptional!
+          Your kind heart and persona is exceptional!
         </Heading>
         <Text fontSize={['18px', '24px']} mb="8"> {/* Adjust font size for mobile */}
           I will start with the fact that you put efforts in making sure everyone around
@@ -172,14 +172,17 @@ function BirthdayPage() {
           mb="4"
         />
         <Box>
-          <Button
-            backgroundColor="#5c4c47"
-            color="#fff"
-            _hover={{ backgroundColor: '#644c46' }}
-            mr="20px"
-          >
-            Watch More
-          </Button>
+          <Link to="https://drive.google.com/file/d/10nJPo_HkccEpCoXz0BnpXRzyMRD_oTf4/view?usp=drive_link">
+            <Button
+              backgroundColor="#5c4c47"
+              color="#fff"
+              _hover={{ backgroundColor: '#644c46' }}
+              mr="20px"
+            >
+              Watch More
+            </Button>
+          </Link>
+          <Link to="/confettiAnimation">
           <Button
             backgroundColor="#5c4c47"
             color="#fff"
@@ -187,6 +190,7 @@ function BirthdayPage() {
           >
            Birthday Wish
           </Button>
+          </Link>
         </Box>
       </Box>
     </ChakraProvider>
