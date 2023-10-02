@@ -31,12 +31,12 @@ function ConfettiAnimation() {
         recycle={false}
         gravity={0.2} // Adjust the gravity effect
         wind={0.1} // Adjust the wind effect
-        colors={['#8f756b', '#5c4c47']}
+        colors={['#a864fd', '#F7B4BE', '#29cdff', '#fdff6a', '#78ff44']}
         run={isConfettiActive}
       />
-      <div className="message-animation">
+      <div className="message-animation" colors={[ '#a864fd', '#F7B4BE', '#29cdff', '#fdff6a', '#78ff44' ]}>
         <div className="message">Happy Birthday</div>
-        <div className="city-boy">my City Boy</div>
+        <div className="message">my City Boy</div>
       </div>
     </div>
   );

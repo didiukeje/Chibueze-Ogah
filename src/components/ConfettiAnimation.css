@@ -1,49 +1,52 @@
+
 .confetti-container {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    background-color: #ff718d;
-    overflow: hidden;
-  }
-  
-  button {
-    margin: 10px;
-    background-color: #29cdff;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-  }
-  
-  .message-animation {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    font-size: 24px;
-    font-weight: bold;
-    color: white;
-    animation: bounce 2s infinite alternate;
-  }
-  
-  .message {
-    margin-bottom: 10px;
-  }
-  
-  .city-boy {
-    color: #a864fd; /* Updated color */
-  }
-  
-  @keyframes bounce {
-    0% {
-      transform: translateY(0);
+position: relative;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+height: 100vh;
+background-color: #ffffff;
+overflow: hidden;
+}
+
+.message-animation {
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+text-align: center;
+font-weight: bold;
+color: white;
+animation: bounce 2s infinite alternate;
+z-index: 2; /* Ensure the message is on top of the confetti */
+}
+
+.message {
+margin-bottom: 20px; /* Separate "Happy Birthday" and "my City Boy" */
+font-weight: 900;
+text-transform: uppercase;
+text-align: center;
+color: rebeccapurple;
+font-family: 'Righteous', cursive;
+font-size: 93px;
+letter-spacing: 10px;
+text-shadow: 2px 4px 11px rgb(0 0 0 / 28%);
+-webkit-text-stroke-width: 1px;
+-webkit-text-stroke-color: white;
+}
+
+@keyframes bounce {
+0% {
+transform: translateY(0);
+}
+100% {
+transform: translateY(-10px);
+}
+}
+
+@media (max-width: 768px) {
+    .message {
+      font-size: 2.5rem; /* Adjust font size for mobile devices */
+      letter-spacing: 1px; /* Adjust letter spacing for mobile devices */
     }
-    100% {
-      transform: translateY(-10px);
-    }
   }
-  
