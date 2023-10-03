@@ -17,17 +17,17 @@ function BirthdayPage() {
         backgroundColor="#5c4c47"
         color="#fff"
         minHeight="100vh"
-        padding="20px" // Add padding for mobile
+        padding="20px" 
         display="flex"
         flexDirection="column"
         alignItems="center"
         justifyContent="center"
-        textAlign="center" // Center text on mobile
+        textAlign="center" 
       >
-        <Heading fontSize={['2xl', '3xl']} mb="4"> {/* Adjust font size for mobile */}
+        <Heading fontSize={['2xl', '3xl']} mb="4"> 
           Happy Birthday, CITY BOY!
         </Heading>
-        <Text fontSize={['18px', '24px']} mb="8" width="100%"> {/* Adjust font size for mobile */}
+        <Text fontSize={['18px', '24px']} mb="8" width="100%"> 
           You make every moment special. Here's to a day as wonderful as you are.
           Chibueze Pascal Ogah, you are welcome to this website specially built for you by your 
           one and only CITY GIRL. Sit back and read with smiles because I'm sure you're definitely
@@ -41,7 +41,7 @@ function BirthdayPage() {
           src="/fave-modified.png"
           alt="Birthday Image"
           borderRadius="lg"
-          boxSize={['200px', '300px']} // Adjust image size for mobile
+          boxSize={['200px', '300px']} 
           objectFit="cover"
           mb="4"
         />
@@ -61,17 +61,17 @@ function BirthdayPage() {
         backgroundColor="#8f756b"
         color="#fff"
         minHeight="100vh"
-        padding="20px" // Add padding for mobile
+        padding="20px" 
         display="flex"
         flexDirection="column"
         alignItems="center"
         justifyContent="center"
-        textAlign="center" // Center text on mobile
+        textAlign="center" 
       >
-        <Heading fontSize={['2xl', '3xl']} mb="4"> {/* Adjust font size for mobile */}
+        <Heading fontSize={['2xl', '3xl']} mb="4"> 
           Your kind heart and persona is exceptional!
         </Heading>
-        <Text fontSize={['18px', '24px']} mb="8"> {/* Adjust font size for mobile */}
+        <Text fontSize={['18px', '24px']} mb="8"> 
           I will start with the fact that you put efforts in making sure everyone around
           you ger to feel your love. You've shown me kindness even whenever you are not in the right 
           state of mind. I have made several efforts to make sure I put in serious efforts to commend
