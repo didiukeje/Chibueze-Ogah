@@ -32,7 +32,10 @@ function BirthdayPage() {
           Chibueze Pascal Ogah, you are welcome to this website specially built for you by your 
           one and only CITY GIRL. Sit back and read with smiles because I'm sure you're definitely
           smiling with a big grin on your face. And Oh, click the link below to watch your CITY BOY video
-          as the one and only City Boy I know who is a fashionista and a Hot Boy.
+          as the one and only City Boy I know who is a fashionista and a Hot Boy. I call you hot boy 
+          because you really know to dress. I will never ever get scared that you may come out looking
+          under dressed because I trust you to show up and show out. Your taste in fashion makes the name 
+          CITY BOY perfect for you.
         </Text>
         <Image
           src="/fave-modified.png"
