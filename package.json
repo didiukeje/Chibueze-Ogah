@@ -42,10 +42,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
-  ,
+  },
     "builds": [
-      { "src": "build/package.json", "use": "@vercel/static-build" }
+      { "src": "build/package.json", "use": "@vercel/static-build",  "config": { "buildCommand": "npm run build" }}
     ],
     "routes": [
       { "src": "/favicon.ico", "dest": "/favicon.ico" },
